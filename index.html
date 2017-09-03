@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Sports Fantasy Leagues</title>
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <!-- Do not add `link` tags-->
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Fondamento");
+  </style>
+
+  <!-- Do not add `script` tags-->
+  <script charset="utf-8" defer src="public/vendor.js" type="text/javascript">
+  </script>
+
+  <script charset="utf-8" defer src="public/application.js" type="text/javascript">
+  </script>
+
+</head>
+
+<body class="container-fluid">
+  <h1 class="banner">Sports Fantasy Leagues2</h1>
+
+
+  <div class="modal fade location modal-content" id="access">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" type="button">X</button>
+        </div>
+
+        <ul class="nav nav-tabs" id="tabContent">
+          <li class="active"><a data-toggle="tab" href="#signin">Sign-In</a></li>
+          <li><a data-toggle="tab" href="#signup">Sign-Up</a></li>
+          <li><a data-toggle="tab" href="#changepassword">Change Password</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- <div>
+          </div> -->
+
+          <div class="tab-pane form-group active" id="signin">
+            <form id="signIn">
+              <br>
+              <label form="name">Email</label>
+              <br>
+              <input type="text" name="credentials[email]" placeholder="Email" class="form-control">
+              <br>
+              <label form="name">Password</label>
+              <br>
+              <input type="password" name="credentials[password]" placeholder="Password" class="form-control">
+              <br>
+              <input type="submit" name="submit" class="submit">
+            </form>
+          </div>
+
+          <div class="tab-pane form-group" id="signup">
+            <form id="signUp">
+              <br>
+              <label for="username">Email</label>
+              <br>
+              <input type="text" name="credentials[email]" placeholder="Email" class="form-control">
+              <br>
+              <label for="password">Password</label>
+              <br>
+              <input type="password" name="credentials[password]" placeholder="Password" class="form-control">
+              <br>
+              <label for="password-confirm">Password</label>
+              <br>
+              <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password" class="form-control">
+              <br>
+              <input type="submit" name="submit" class="submit">
+            </form>
+          </div>
+
+          <div class="tab-pane form-group" id="changepassword">
+            <form id="changePassword">
+              <br>
+              <label for="password">Old Password</label>
+              <br>
+              <input type="password" name="credentials[old]" placeholder="Password" class="form-control">
+              <br>
+              <label for="password-confirm">New Password</label>
+              <br>
+              <input type="password" name="credentials[new]" placeholder="Confirm Password" class="form-control">
+              <br>
+              <input type="submit" name="submit" class="submit">
+            </form>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <nav class="navbar navbar-default navbar-fixed-top modalbar">
+    <div class="container">
+      <div>
+        <form id="signOut">
+          <button class="btn btn-primary position-modal signout">Sign Out</button>
+        </form>
+      </div>
+      <div>
+        <button class="btn btn-primary signin fixed-top" data-target="#access" data-toggle="modal" type="button">SignIn/SignUp</button>
+      </div>
+    </div>
+  </nav>
+
+</body>
+
+</html>
