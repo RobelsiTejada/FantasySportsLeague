@@ -1,61 +1,58 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+## Project Idea
 
-# browser-template
+Sports Fantasy Leagues. Would allow users to keep track of all of their Yahoo sports fantasy league rosters and games (NFL, NBA, MLB and NHL). Users will be able to set up their own leagues of 8-12 users. Although, I am not a sports fantasy league follower or player, I am sure there is a huge market for it and it is something that would be used and make life easier. Everything in one place.
 
-A template for starting front-end projects. Webpack for `require` system, build
-pipeline, and development server. Boostrap and Handlebars.js included. No
-front-end frameworks included.
+## User stories
 
-## Installation
+1. User is able to signup upon arriving to homepage by selecting the login/signup button and selecting signup tab on modal pop up.
+2. User is able to login upon arriving to homepage by selecting the login/signup button and typing in username and corresponding user password on the defualt on load login modal tab.
+3. User is able to pull their Yahoo Sports Fantasy Leagues rosters after athentication and should be stored and update every time the correspoding link gets clicked.
+4. User is able to view statistics of Yahoo Sports Fantasy Leagues rosters and individual athletes.
+5. User is able to store statistics to see averages of Yahoo Sports Fantasy Leagues rosters and individual athletes.
 
-1.  [Download](../../archive/master.zip) this template.
-1.  Unzip and rename the template directory.
-1.  Empty [`README.md`](README.md) and fill with your own content.
-1.  Replace all instances of `robelsitejada.FantasySportsLeague` with the name of your project.
-1.  Move into the new project and `git init`
-1.  Add all of the files in your project with the command `git add -A`
-  -   *Note:* THIS IS THE ONLY TIME YOU SHOULD RUN THIS COMMAND
-1.  Commit all of your files with the command `git commit`
-  -   Your commit title should read `Initial commit`
-1.  Install dependencies with `npm install`.
+## Plan your tables and columns
 
-## Structure
+I would need a table for user information, a table for user rosters in each sport covered (NFL, NBA, MLB and NHL) and a table for current day highlights. For the user table, it would have columns for authentication and user is allowed to add links to their favorite leagues.
 
-Developers should store JavaScript files in [`assets/scripts`](assets/scripts).
-The "manifest" or entry-point is
-[`assets/scripts/index.js`](assets/scripts/index.js). In general, only
-application initialization goes in this file. It's normal for developers to
-start putting all code in this file, but encourage them to break out different
-responsibilities and use the `require` syntax put references where they're
-needed.
+## ERD (entity relationship diagram)
 
-Developers should set `config.apiOrigins.production` (and
-`config.apiOrigins.development` if it differs from the default).  With
-`apiOrigins` set, developers may rely on `config.apiOrigin` as the base for API
-URLs.
+<img src="https://image.ibb.co/fpjSu5/ERD_full_stack_pro.png" alt="ERD_full_stack_pro" border="0">
 
-Developers should store styles in [`assets/styles`](assets/styles) and load them
-from [`assets/styles/index.scss`](assets/styles/index.scss).
 
-Developers should use [getFormFields](forms.md) to retrieve form data to send to
-an API.
+## Routing
 
-To deploy a browser-template based SPA, run `grunt deploy`.
+What routes will you need to be able to make the proper request to your API?
 
-## Tasks
+GET
+1. /leagues leagues#index display all leagues rosters for user allows them so select by sport.
+2. /leagues/<sport> leagues#<sport> display all league statistics for sport (NFL, NBA, MLB and NHL).
+3. /leagues/stats leagues#stats display user win-loss record and stats
+3. /games games#index to only show games currently in season
+4. /games;game_types=full,pickem-team games#game_types full|pickem-team|pickem-group|pickem-team-list
+5. /games;game_codes=nfl,mlb game#game_codes Any valid game codes
+6. /games;seasons=2011,2012 game#seasons Any valid seasons
 
-Developers should run these often!
 
--   `grunt nag` or just `grunt`: runs code quality analysis tools on your code
-    and complains
--   `grunt make-standard`: reformats all your code in the JavaScript Standard Style
--   `grunt <server|serve|s>`: generates bundles, watches, and livereloads
--   `grunt test`: runs any automated tests, depends on `grunt build`
--   `grunt build`: place bundled styles and scripts where `index.html` can find
-    them
+POST
+1. /leagues/roster leagues#roster add your roster for each sports league.
 
-## [License](LICENSE)
+PATCH
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+1. /leagues/roster leagues#updateroster update your roster for each sports league.
+
+
+## 3rd Party APIs
+
+Yahoo Sports Fantasy API https://developer.yahoo.com/fantasysports/guide/
+
+## Wireframes
+
+<img src="https://image.ibb.co/msjOE5/Wireframe_Rails_Project.png" alt="Wireframe_Rails_Project" border="0">
+
+
+## Timetable
+
+1. One day to set up the basic front end structure.
+2. Two days to set up API and go over documentation for Yahoo Sports Fantasy API.
+3. Three days to setup database and connect to API, Two days of work and One day to test and debug.
+4. Two days to complete front end formatting and complete testing.
