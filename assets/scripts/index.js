@@ -2,7 +2,7 @@
 
 const setAPIOrigin = require('./../../lib/set-api-origin.js')
 const config = require('./config.js')
-const userEvents = require('./events.js')
+const userEvents = require('./auth/events.js')
 
 $(() => {
   setAPIOrigin(location, config)
