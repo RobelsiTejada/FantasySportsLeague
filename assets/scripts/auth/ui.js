@@ -4,7 +4,7 @@ const app = require('./app.js')
 
 const signUpSuccess = (data) => {
   console.log(data)
-  // $('#signup').hide()
+  $('#signup').hide()
 }
 
 const signInSuccess = (data) => {
