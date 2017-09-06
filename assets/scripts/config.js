@@ -2,7 +2,7 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://fantasysportsleague.herokuapp.com'
+    production: 'http://fantasysportsleague.herokuapp.com'
     // development: 'https://fantasysportsleague.herokuapp.com'
   }
 }

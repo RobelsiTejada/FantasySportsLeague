@@ -1,5 +1,5 @@
 'use strict'
 
 module.exports = {
-  host: 'https://fantasysportsleague.herokuapp.com'
+  host: 'http://fantasysportsleague.herokuapp.com'
 }
