@@ -80,7 +80,6 @@ __webpack_require__(14);
 
 var setAPIOrigin = __webpack_require__(6);
 var config = __webpack_require__(8);
-var userEvents = __webpack_require__(9);
 
 $(function () {
   setAPIOrigin(location, config);
@@ -90,13 +89,15 @@ $(function () {
 // const example = require('./example');
 
 // use require without a reference to ensure a file is bundled
-__webpack_require__(13);
+__webpack_require__(9);
+var userEvents = __webpack_require__(10);
+// event handlers //
 
-// On document ready
 $(function () {
-  // $('.landing-page').hide()
-  setAPIOrigin(location, config);
-  userEvents.addHandlers();
+  $('#signUp').on('submit', userEvents.onSignUp);
+  $('#signIn').on('submit', userEvents.onSignIn);
+  $('#changePassword').on('submit', userEvents.onChangePassword);
+  $('#signOut').on('submit', userEvents.onSignOut);
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
@@ -172,7 +173,8 @@ module.exports = parseNestedQuery;
 
 var config = {
   apiOrigins: {
-    production: 'https://fantasysportsleague.herokuapp.com'
+    production: 'https://fantasysportsleague.herokuapp.com',
+    development: 'https://fantasysportsleague.herokuapp.com'
   }
 };
 
@@ -183,11 +185,23 @@ module.exports = config;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
 
-var api = __webpack_require__(10);
-var ui = __webpack_require__(11);
-var getFormFields = __webpack_require__(12);
+
+var element = document.createElement('div');
+element.id = 'myDiv';
+element.innerHTML = 'Hello World!';
+document.body.appendChild(element);
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var api = __webpack_require__(11);
+var ui = __webpack_require__(12);
+var getFormFields = __webpack_require__(13);
 
 var onSignUp = function onSignUp(event) {
   event.preventDefault();
@@ -214,20 +228,15 @@ var onChangePassword = function onChangePassword(event) {
   api.changePassword(data).done(ui.changePasswordSuccess).fail(ui.onError);
 };
 
-var addHandlers = function addHandlers() {
-  $('#signUp').on('submit', onSignUp);
-  $('#signIn').on('submit', onSignIn);
-  $('#signOut').on('submit', onSignOut);
-  $('#changePassword').on('submit', onChangePassword);
-};
-
 module.exports = {
-  addHandlers: addHandlers
+  onSignIn: onSignIn,
+  onSignUp: onSignUp,
+  onSignOut: onSignOut,
+  onChangePassword: onChangePassword
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -281,17 +290,17 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function($) {
 
 var app = __webpack_require__(2);
 
 var signUpSuccess = function signUpSuccess(data) {
   console.log(data);
-  // $('#signup').hide()
+  $('#signup').hide();
 };
 
 var signInSuccess = function signInSuccess(data) {
@@ -327,9 +336,10 @@ module.exports = {
   onSuccess: onSuccess,
   onError: onError
 };
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -374,18 +384,6 @@ var getFormFields = function getFormFields(form) {
 };
 
 module.exports = getFormFields;
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var element = document.createElement('div');
-element.id = 'myDiv';
-element.innerHTML = 'Hello World!';
-document.body.appendChild(element);
 
 /***/ }),
 /* 14 */
