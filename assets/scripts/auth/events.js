@@ -20,7 +20,7 @@ const onSignIn = function (event) {
     .catch(ui.onError)
 }
 
-const onSignOut = function () {
+const onSignOut = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
   const id = data.event.id
@@ -29,7 +29,7 @@ const onSignOut = function () {
     .catch(ui.onError)
 }
 
-const onChangePassword = function () {
+const onChangePassword = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
   const id = data.event.id
