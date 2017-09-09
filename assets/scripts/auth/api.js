@@ -18,7 +18,7 @@ const signIn = function (data) {
   })
 }
 
-const signOut = function () {
+const signOut = function (user) {
   return $.ajax({
     method: 'DELETE',
     url: app.host + '/sign-out/' + app.user.id,
