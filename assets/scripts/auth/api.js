@@ -1,7 +1,9 @@
 'use strict'
 
-const app = require('./app.js')
+const app = require('../app')
+const getFormFields = require('../../../lib/get-form-fields.js')
 
+// authApi.signUp(authUi.success, authUi.failure, data)
 const signUp = function (data) {
   return $.ajax({
     url: app.host + '/sign-up/',
@@ -18,7 +20,7 @@ const signIn = function (data) {
   })
 }
 
-const signOut = function (user) {
+const signOut = function () {
   return $.ajax({
     method: 'DELETE',
     url: app.host + '/sign-out/' + app.user.id,
@@ -43,5 +45,6 @@ module.exports = {
   signUp,
   signIn,
   signOut,
-  changePassword
+  changePassword,
+  getFormFields
 }
