@@ -25,8 +25,8 @@
 <body class="container-fluid">
   <h1 class="banner">Sports Fantasy Leagues</h1>
 
-    <div> placeholder
-    </div>
+  <div> placeholder 2
+  </div>
 
   <div class="modal fade location modal-content" id="access">
     <div class="modal-dialog">
@@ -44,54 +44,38 @@
 
         <div class="tab-content">
 
-          <div class="tab-pane form-group active" id="signin">
-            <form id="signIn">
-              <br>
-              <label form="name">Email</label>
-              <br>
-              <input type="text" name="credentials[email]" placeholder="Email" class="form-control">
-              <br>
-              <label form="name">Password</label>
-              <br>
-              <input type="password" name="credentials[password]" placeholder="Password" class="form-control">
-              <br>
-              <input type="submit" name="submit" class="submit">
-            </form>
-          </div>
+          <form id="sign-in">
+            <div class="tab-pane form-group active" id="signin">
+              <h4>Login</h4>
+              <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
+              <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
 
-          <div class="tab-pane form-group" id="signup">
-            <form id="signUp">
-              <br>
-              <label for="username">Email</label>
-              <br>
-              <input type="text" name="credentials[email]" placeholder="Email" class="form-control">
-              <br>
-              <label for="password">Password</label>
-              <br>
-              <input type="password" name="credentials[password]" placeholder="Password" class="form-control">
-              <br>
-              <label for="password-confirm">Password</label>
-              <br>
-              <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password" class="form-control">
-              <br>
-              <input type="submit" name="submit" class="submit">
-            </form>
-          </div>
+          <form id="sign-up">
+            <div class="tab-pane form-group" id="signup">
+              <h4>Sign Up!</h4>
+              <label for="">Username</label>
+              <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control"><br>
+              <label for="">Password</label>
+              <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control">
+              <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control"><br>
+              <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
+            </div>
+          </form>
 
-          <div class="tab-pane form-group" id="changepassword">
-            <form id="changePassword">
-              <br>
-              <label for="password">Old Password</label>
-              <br>
-              <input type="password" name="credentials[old]" placeholder="Password" class="form-control">
-              <br>
-              <label for="password-confirm">New Password</label>
-              <br>
-              <input type="password" name="credentials[new]" placeholder="Confirm Password" class="form-control">
-              <br>
-              <input type="submit" name="submit" class="submit">
-            </form>
-          </div>
+
+          <form id="change-password">
+            <div class="tab-pane form-group" id="changepassword">
+              <h4>Change Password</h4>
+              <label for="">Old Password</label>
+              <input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><br>
+              <label for="">New Password</label>
+              <input type="password" name="passwords[new]" placeholder="New Password" class="form-control"><br>
+              <button type="submit" class="btn btn-primary" name="submit">Change Password</button>
+            </div>
+          </form>
 
         </div>
 
@@ -105,7 +89,7 @@
   <nav class="navbar navbar-default navbar-fixed-top modalbar">
     <div class="container">
       <div>
-        <form id="signOut">
+        <form id="sign-out">
           <button class="btn btn-primary position-modal signout">Sign Out</button>
         </form>
       </div>

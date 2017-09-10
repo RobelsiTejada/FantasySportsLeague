@@ -2,37 +2,38 @@
 
 const app = require('../app.js')
 
-const signUpSuccess = (data) => {
-  alert('success')
-}
-
 const signInSuccess = (data) => {
   app.user = data.user
-  alert('success')
+  console.log('sign in success!')
 }
 
 const signOutSuccess = () => {
   app.user = null
-  alert('success')
+  console.log(app)
+  console.log('signed out')
 }
 
 const changePasswordSuccess = () => {
-  alert('success')
+  console.log('Password Successfully Changed.')
 }
 
-const onSuccess = (data) => {
-  alert('success')
+const signUpSuccess = (data) => {
+  console.log(data)
 }
 
-const onError = (error) => {
-  console.log(error)
+const success = (data) => {
+  console.log(data)
+}
+
+const failure = (error) => {
+  console.error(error)
 }
 
 module.exports = {
-  signUpSuccess,
+  failure,
+  success,
   signInSuccess,
   signOutSuccess,
   changePasswordSuccess,
-  onSuccess,
-  onError
+  signUpSuccess
 }
