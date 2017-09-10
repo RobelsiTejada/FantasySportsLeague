@@ -3,13 +3,11 @@
 const app = require('../app.js')
 
 const signUpSuccess = (data) => {
-  console.log(data)
   alert('success')
 }
 
 const signInSuccess = (data) => {
   app.user = data.user
-  console.log(data)
   alert('success')
 }
 
@@ -23,13 +21,11 @@ const changePasswordSuccess = () => {
 }
 
 const onSuccess = (data) => {
-  console.log(data)
   alert('success')
 }
 
 const onError = (error) => {
   console.log(error)
-  alert('error')
 }
 
 module.exports = {
