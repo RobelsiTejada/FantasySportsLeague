@@ -25,7 +25,7 @@
 <body class="container-fluid">
   <h1 class="banner">Sports Fantasy Leagues</h1>
 
-  <div> placeholder
+  <div> placeholder n
   </div>
 
   <div class="modal fade location modal-content" id="access">
@@ -44,43 +44,43 @@
 
         <div class="tab-content">
 
-<div id="signin">
-          <form id="sign-in">
-            <div class="tab-pane form-group active">
-              <h4>Login</h4>
-              <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
-              <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
-              <button type="submit" class="btn btn-primary">Login</button>
-            </div>
-          </form>
-        </div>
+          <div class="tab-pane" id="signin">
+            <form id="sign-in">
+              <div class="form-group active">
+                <h4>Login</h4>
+                <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
+                <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </div>
 
-<div id="signup">
-          <form id="sign-up">
-            <div class="tab-pane form-group">
-              <h4>Sign Up!</h4>
-              <label for="">Username</label>
-              <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control"><br>
-              <label for="">Password</label>
-              <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control">
-              <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control"><br>
-              <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
-            </div>
-          </form>
-        </div>
+          <div class="tab-pane" id="signup">
+            <form id="sign-up">
+              <div class="form-group">
+                <h4>Sign Up!</h4>
+                <label for="">Username</label>
+                <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control"><br>
+                <label for="">Password</label>
+                <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control">
+                <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control"><br>
+                <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
+              </div>
+            </form>
+          </div>
 
-<div id="changepassword">
-          <form id="change-password">
-            <div class="tab-pane form-group">
-              <h4>Change Password</h4>
-              <label for="">Old Password</label>
-              <input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><br>
-              <label for="">New Password</label>
-              <input type="password" name="passwords[new]" placeholder="New Password" class="form-control"><br>
-              <button type="submit" class="btn btn-primary" name="submit">Change Password</button>
-            </div>
-          </form>
-        </div>
+          <div class="tab-pane" id="changepassword">
+            <form id="change-password">
+              <div class="form-group">
+                <h4>Change Password</h4>
+                <label for="">Old Password</label>
+                <input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><br>
+                <label for="">New Password</label>
+                <input type="password" name="passwords[new]" placeholder="New Password" class="form-control"><br>
+                <button type="submit" class="btn btn-primary" name="submit">Change Password</button>
+              </div>
+            </form>
+          </div>
 
         </div>
 
@@ -91,15 +91,16 @@
     </div>
 
   </div>
+
   <nav class="navbar navbar-default navbar-fixed-top modalbar">
     <div class="container">
       <div>
         <form id="sign-out">
-          <button class="btn btn-primary position-modal signout">Sign Out</button>
+          <button class="btn btn-primary position-modal signout fixed-left">Sign Out</button>
         </form>
       </div>
       <div>
-        <button class="btn btn-primary signin fixed-top" data-target="#access" data-toggle="modal" type="button">SignIn/SignUp</button>
+        <button class="btn btn-primary signin fixed-right" data-target="#access" data-toggle="modal" type="button">SignIn/SignUp</button>
       </div>
     </div>
   </nav>
