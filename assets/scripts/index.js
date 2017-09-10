@@ -15,8 +15,5 @@ $(() => {
 require('./example')
 
 $(() => {
-  $('#signUp').on('submit', userEvents.onSignUp)
-  $('#signIn').on('submit', userEvents.onSignIn)
-  $('#changePassword').on('submit', userEvents.onChangePassword)
-  $('#signOut').on('submit', userEvents.onSignOut)
+  userEvents.addHandlers()
 })

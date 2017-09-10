@@ -25,7 +25,7 @@
 <body class="container-fluid">
   <h1 class="banner">Sports Fantasy Leagues</h1>
 
-  <div> placeholder n
+  <div> placeholder
   </div>
 
   <div class="modal fade location modal-content" id="access">
@@ -37,16 +37,16 @@
         </div>
 
         <ul class="nav nav-tabs" id="tabContent">
-          <li class="active"><a data-toggle="tab" href="#signin">Sign-In</a></li>
-          <li><a data-toggle="tab" href="#signup">Sign-Up</a></li>
-          <li><a data-toggle="tab" href="#changepassword">Change Password</a></li>
+          <li class="active"><a data-toggle="tab" href="#login">Sign-In</a></li>
+          <li><a data-toggle="tab" href="#newuser">Sign-Up</a></li>
+          <li><a data-toggle="tab" href="#newpassword">Change Password</a></li>
         </ul>
 
         <div class="tab-content">
 
-          <div class="tab-pane" id="signin">
+          <div class="tab-pane active" id="login">
             <form id="sign-in">
-              <div class="form-group active">
+              <div class="form-group">
                 <h4>Login</h4>
                 <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
                 <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
@@ -55,10 +55,10 @@
             </form>
           </div>
 
-          <div class="tab-pane" id="signup">
+          <div class="tab-pane" id="newuser">
             <form id="sign-up">
               <div class="form-group">
-                <h4>Sign Up!</h4>
+                <h4>Sign Up</h4>
                 <label for="">Username</label>
                 <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control"><br>
                 <label for="">Password</label>
@@ -69,7 +69,7 @@
             </form>
           </div>
 
-          <div class="tab-pane" id="changepassword">
+          <div class="tab-pane" id="newpassword">
             <form id="change-password">
               <div class="form-group">
                 <h4>Change Password</h4>
