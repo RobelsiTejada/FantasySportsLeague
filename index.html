@@ -25,7 +25,7 @@
 <body class="container-fluid">
   <h1 class="banner">Sports Fantasy Leagues</h1>
 
-  <div> placeholder 2
+  <div> placeholder
   </div>
 
   <div class="modal fade location modal-content" id="access">
@@ -44,17 +44,20 @@
 
         <div class="tab-content">
 
+<div id="signin">
           <form id="sign-in">
-            <div class="tab-pane form-group active" id="signin">
+            <div class="tab-pane form-group active">
               <h4>Login</h4>
               <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
               <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
               <button type="submit" class="btn btn-primary">Login</button>
             </div>
           </form>
+        </div>
 
+<div id="signup">
           <form id="sign-up">
-            <div class="tab-pane form-group" id="signup">
+            <div class="tab-pane form-group">
               <h4>Sign Up!</h4>
               <label for="">Username</label>
               <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control"><br>
@@ -64,10 +67,11 @@
               <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
             </div>
           </form>
+        </div>
 
-
+<div id="changepassword">
           <form id="change-password">
-            <div class="tab-pane form-group" id="changepassword">
+            <div class="tab-pane form-group">
               <h4>Change Password</h4>
               <label for="">Old Password</label>
               <input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><br>
@@ -76,6 +80,7 @@
               <button type="submit" class="btn btn-primary" name="submit">Change Password</button>
             </div>
           </form>
+        </div>
 
         </div>
 

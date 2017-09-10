@@ -1,46 +1,49 @@
 'use strict'
 
-const api = require('./api.js')
-const ui = require('./ui.js')
-const getFormFields = require(`../../../lib/get-form-fields.js`)
+const api = require('./api')
+const ui = require('./ui')
+const getFormFields = require('../../../lib/get-form-fields.js')
 
 const onSignUp = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
   api.signUp(data)
-    .then(ui.signUpSuccess)
-    .catch(ui.onError)
+    .done(ui.signUpSuccess)
+    .fail(ui.fail)
 }
 
 const onSignIn = function (event) {
   event.preventDefault()
+
   const data = getFormFields(event.target)
   api.signIn(data)
-    .then(ui.signInSuccess)
-    .catch(ui.onError)
+    .done(ui.signInSuccess)
+    .fail(ui.fail)
 }
 
 const onSignOut = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
-  const id = data.event.id
-  api.signOut(id)
-    .then(ui.signOutSuccess)
-    .catch(ui.onError)
+  api.signOut(data)
+    .done(ui.signOutSuccess)
+    .fail(ui.fail)
 }
 
 const onChangePassword = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
-  const id = data.event.id
-  api.changePassword(id)
-    .then(ui.changePasswordSuccess)
-    .catch(ui.onError)
+  api.changePassword(data)
+    .done(ui.changePasswordSuccess)
+    .fail(ui.fail)
+}
+
+const addHandlers = () => {
+  $('#sign-up').on('submit', onSignUp)
+  $('#sign-in').on('submit', onSignIn)
+  $('#sign-out').on('submit', onSignOut)
+  $('#change-password').on('submit', onChangePassword)
 }
 
 module.exports = {
-  onSignIn,
-  onSignUp,
-  onSignOut,
-  onChangePassword
+  addHandlers
 }
