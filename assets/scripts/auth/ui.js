@@ -6,11 +6,14 @@ const signInSuccess = (data) => {
   app.user = data.user
   $('#sign-out').show()
   $('#sign-in').hide()
+  $('#sign-up').hide()
 }
 
 const signOutSuccess = () => {
   app.user = null
   $('#sign-out').hide()
+  $('#sign-in').show()
+  $('#sign-up').show()
 }
 
 const changePasswordSuccess = () => {
@@ -18,7 +21,7 @@ const changePasswordSuccess = () => {
 
 const signUpSuccess = (data) => {
   $('#sign-out').show()
-  $('#sign-in').hide()
+  $('#sign-up').hide()
 }
 
 const success = (data) => {
