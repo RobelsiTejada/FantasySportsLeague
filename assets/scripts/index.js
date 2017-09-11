@@ -1,8 +1,8 @@
 'use strict'
 
-const setAPIOrigin = require('../../../lib/set-api-origin.js')
-const config = require('./config.js')
-const userEvents = require('./auth/events.js')
+const setAPIOrigin = require('../../lib/set-api-origin')
+const config = require('./config')
+const userEvents = require('./auth/events')
 
 $(() => {
   setAPIOrigin(location, config)
