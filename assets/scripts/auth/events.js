@@ -43,6 +43,4 @@ const addHandlers = () => {
   $('#change-password').on('submit', onChangePassword)
 }
 
-module.exports = {
-  addHandlers
-}
+module.exports = addHandlers
