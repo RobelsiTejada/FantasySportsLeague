@@ -7,6 +7,7 @@
     "content": "CC­BY­NC­SA 4.0"
   },
   "dependencies": {
+    "grunt-npm-install": "^0.3.1",
     "grunt-serve": "^0.1.6",
     "grunt-update": "^0.2.3",
     "jquery": "^3.1.1",
