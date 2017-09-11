@@ -17,6 +17,6 @@ const authEvents = require('./auth/events.js')
 
 // On document ready
 $(() => {
-  $('#authenticate').hide()
+  $('#checkout').hide()
   authEvents.addHandlers()
 })

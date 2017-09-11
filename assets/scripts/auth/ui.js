@@ -20,6 +20,8 @@ const changePasswordSuccess = () => {
 const signUpSuccess = (data) => {
   $('#checkout').show()
   $('#newuser').hide()
+  $('#newuser2').show()
+  $('#newusererror').show()
 }
 
 const success = (data) => {

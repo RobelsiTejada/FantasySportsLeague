@@ -26,7 +26,7 @@
   <br><br><br><br>
   <h1 class="banner">Sports Fantasy Leagues</h1>
 
-  <div> placeholder 2
+  <div> placeholder
   </div>
 
   <div class="modal fade location modal-content" id="access">
@@ -67,18 +67,18 @@
                 <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control"><br>
                 <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
               </div>
-            </form>
-          </div>
-
-          <div class="tab-pane" id="newpassword">
-            <form id="change-password">
-              <div class="form-group">
-                <h4>Change Password</h4>
-                <label for="">Old Password</label>
-                <input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><br>
-                <label for="">New Password</label>
-                <input type="password" name="passwords[new]" placeholder="New Password" class="form-control"><br>
-                <button type="submit" class="btn btn-primary" name="submit">Change Password</button>
+              <div id="newuser2">
+                <h4>You have successfully signed up!
+                  <br>
+                  You can now click the Sign-in tab to login! :)
+                </h4>
+              </div>
+              <div id="newusererror">
+              <h4>
+                The passwords enter do not match!
+                <br>
+                Please make sure your passwords match and try again.
+              </h4>
               </div>
             </form>
           </div>
@@ -97,7 +97,16 @@
     <div class="container">
       <div>
         <form id="sign-out">
-          <button class="btn btn-primary position-modal signout" id="checkout">Sign Out</button>
+          <button class="btn btn-primary" id="checkout">Sign Out</button>
+        </form>
+      </div>
+      <div class="tab-pane" id="newpassword">
+        <form id="change-password">
+          <div class="form-group">
+            <h4>Change Password:</h4><label for="">Old Password</label><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><label for="">New Password</label><input type="password" name="passwords[new]" placeholder="New Password" class="form-control">
+            <button
+              type="submit" class="btn btn-primary" name="submit">Change Password</button>
+          </div>
         </form>
       </div>
       <div>
