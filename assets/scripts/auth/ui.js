@@ -9,7 +9,6 @@ const signInSuccess = (data) => {
 
 const signOutSuccess = () => {
   app.user = null
-  console.log(app)
   console.log('signed out')
 }
 
