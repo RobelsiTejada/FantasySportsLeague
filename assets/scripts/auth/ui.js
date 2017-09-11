@@ -4,24 +4,22 @@ const app = require('../app.js')
 
 const signInSuccess = (data) => {
   app.user = data.user
-  $('#sign-out').show()
-  $('#sign-in').hide()
-  $('#sign-up').hide()
+  $('#checkout').show()
+  $('#authenticate').hide()
 }
 
 const signOutSuccess = () => {
   app.user = null
-  $('#sign-out').hide()
-  $('#sign-in').show()
-  $('#sign-up').show()
+  $('#checkout').hide()
+  $('#authenticate').show()
 }
 
 const changePasswordSuccess = () => {
 }
 
 const signUpSuccess = (data) => {
-  $('#sign-out').show()
-  $('#sign-up').hide()
+  $('#checkout').show()
+  $('#newuser').hide()
 }
 
 const success = (data) => {
