@@ -17,6 +17,6 @@ const authEvents = require('./auth/events.js')
 
 // On document ready
 $(() => {
-  $('#sign-out').hide()
+  $('#authenticate').hide()
   authEvents.addHandlers()
 })
