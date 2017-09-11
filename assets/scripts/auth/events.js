@@ -23,8 +23,7 @@ const onSignIn = (event) => {
 const onSignOut = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
-  const id = data.event.id
-  api.signOut(id)
+  api.signOut(data)
     .done(ui.signOutSuccess)
     .fail(ui.fail)
 }
@@ -32,8 +31,7 @@ const onSignOut = (event) => {
 const onChangePassword = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
-  const id = data.event.id
-  api.changePassword(id)
+  api.changePassword(data)
     .done(ui.changePasswordSuccess)
     .fail(ui.fail)
 }
