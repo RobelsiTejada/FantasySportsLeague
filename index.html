@@ -26,7 +26,14 @@
   <br><br><br><br>
   <h1 class="banner">Sports Fantasy Leagues</h1>
 
-  <div> placeholder
+  <div id="newpassword">
+    <form id="change-password">
+      <div class="form-group">
+        <h4>Change Password:</h4><label for="">Old Password</label><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><label for="">New Password</label><input type="password" name="passwords[new]" placeholder="New Password" class="form-control">
+        <button
+          type="submit" class="btn btn-primary" name="submit">Change Password</button>
+      </div>
+    </form>
   </div>
 
   <div class="modal fade location modal-content" id="access">
@@ -40,7 +47,6 @@
         <ul class="nav nav-tabs" id="tabContent">
           <li class="active"><a data-toggle="tab" href="#login">Sign-In</a></li>
           <li><a data-toggle="tab" href="#newuser">Sign-Up</a></li>
-          <li><a data-toggle="tab" href="#newpassword">Change Password</a></li>
         </ul>
 
         <div class="tab-content">
@@ -73,7 +79,7 @@
                   You can now click the Sign-in tab to login! :)
                 </h4>
               </div>
-              <div id="newusererror">
+              <div id="newusererrorp">
               <h4>
                 The passwords enter do not match!
                 <br>
@@ -98,15 +104,6 @@
       <div>
         <form id="sign-out">
           <button class="btn btn-primary" id="checkout">Sign Out</button>
-        </form>
-      </div>
-      <div class="tab-pane" id="newpassword">
-        <form id="change-password">
-          <div class="form-group">
-            <h4>Change Password:</h4><label for="">Old Password</label><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><label for="">New Password</label><input type="password" name="passwords[new]" placeholder="New Password" class="form-control">
-            <button
-              type="submit" class="btn btn-primary" name="submit">Change Password</button>
-          </div>
         </form>
       </div>
       <div>
