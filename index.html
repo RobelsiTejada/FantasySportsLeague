@@ -26,7 +26,7 @@
   <br><br><br><br>
   <h1 class="banner">Fantasy Sports Leagues</h1>
 
-  <div id="newpassword">
+  <div class="fixed-bottom" id="newpassword">
     <form id="change-password">
       <div class="form-group">
         <h4>Change Password:</h4><label for="">Old Password</label><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><label for="">New Password</label><input type="password" name="passwords[new]" placeholder="New Password" class="form-control">
@@ -57,7 +57,7 @@
                 <h4>Login</h4>
                 <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
                 <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Login</button>
               </div>
             </form>
           </div>
@@ -66,20 +66,21 @@
             <form id="sign-up">
               <div class="form-group">
                 <h4>Sign Up</h4>
+                <h6>Once you have signed up you will be asked to login</h6>
                 <label for="">Username</label>
                 <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control"><br>
                 <label for="">Password</label>
                 <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control">
                 <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control"><br>
-                <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
+                <button type="submit" class="btn btn-primary" name="button" data-toggle="#login">Sign Up</button>
               </div>
-              <div id="newuser2">
+              <div class="tab-pane newuser2">
                 <h4>You have successfully signed up!
                   <br>
                   You can now click the Sign-in tab to login! :)
                 </h4>
               </div>
-              <div id="newusererrorp">
+              <div class="tab-pane newusererrorp">
               <h4>
                 The passwords enter do not match!
                 <br>

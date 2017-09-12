@@ -6,13 +6,13 @@ const signInSuccess = (data) => {
   app.user = data.user
   $('#authenticate').hide()
   $('#checkout').show()
-  $('newpassword').show()
+  $('#newpassword').show()
   $('.modal').hide()
 }
 
 const signOutSuccess = () => {
   app.user = null
-  $('newpassword').hide()
+  $('#newpassword').hide()
   $('#checkout').hide()
   $('#authenticate').show()
 }
@@ -23,7 +23,7 @@ const changePasswordSuccess = () => {
 const signUpSuccess = (data) => {
   $('#checkout').show()
   $('#newuser').hide()
-  $('#newuser2').show()
+  $('.newuser2').show()
 }
 
 const success = (data) => {
@@ -31,7 +31,7 @@ const success = (data) => {
 
 const failure = (error) => {
   console.error(error)
-  $('#newusererrorp').show()
+  $('.newusererrorp').show()
 }
 
 module.exports = {
