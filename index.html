@@ -26,14 +26,13 @@
   <br><br><br>
   <h1 class="banner">Fantasy Sports Leagues</h1>
 
-  <p>11</p>
+  <p>12</p>
 
-  <button class="btn btn-primary passwordChange" id="passwordChange" name="submit">Change Password</button>
   <div id="newpassword">
     <form id="change-password">
       <div class="form-group">
-        <h4>Change Password:</h4><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-1 box"><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-1 box">
-        <button type="submit" class="btn btn-primary" name="submit">Update</button>
+        <h4>Change Password:</h4><div><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-1 box"><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-1 box">
+        <button type="submit" class="btn btn-primary" name="submit">Update</button></div>
       </div>
     </form>
   </div>
@@ -123,6 +122,9 @@
       <div>
         <button class="btn btn-primary" data-target="#access" data-toggle="modal" type="button" id="authenticate">SignIn/SignUp</button>
       </div>
+      <div>
+      <button class="btn btn-primary passwordChange" id="passwordChange" name="submit">Change Password</button>
+    </div>
     </div>
   </nav>
 </body>
