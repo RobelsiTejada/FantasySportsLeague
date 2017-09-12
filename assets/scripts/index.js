@@ -23,4 +23,5 @@ $(() => {
   $('#newusererrorp').hide()
   $('#newuser2').hide()
   $('#loginerrorp').hide()
+  $('#logedin').hide()
 })

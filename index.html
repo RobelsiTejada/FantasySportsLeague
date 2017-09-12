@@ -41,26 +41,32 @@
       <div class="modal-content">
 
         <div class="modal-header">
-          <button class="close" data-dismiss="modal" type="button">X</button>
         </div>
 
         <ul class="nav nav-tabs" id="tabContent">
-          <li class="active"><a data-toggle="tab" href="#login">Sign-In</a></li>
+          <li class="active"><a data-toggle="tab" href="#loginform">Sign-In</a></li>
           <li><a data-toggle="tab" href="#newuserform">Sign-Up</a></li>
         </ul>
 
         <div class="tab-content">
 
-          <div class="tab-pane active" id="login">
+          <div class="tab-pane active" id="loginform">
             <form id="sign-in">
-              <div class="form-group">
+              <div class="form-group" id="login">
                 <h4>Login</h4>
                 <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
                 <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
-                <button type="submit" class="btn btn-primary" data-dismiss="modal">Login</button>
+                <button type="submit" class="btn btn-primary">Login</button>
               </div>
             </form>
-            <div class="tab-pane" id="loginerrorp">
+            <div id="logedin">
+            <h4>
+              Click below to go to your homepage!
+              <br>
+              <button class="close" data-dismiss="modal" type="button">Home</button>
+            </h4>
+            </div>
+            <div id="loginerrorp">
             <h4>
               The passwords you entered is not correct!
               <br>
