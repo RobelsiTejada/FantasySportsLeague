@@ -1,0 +1,21 @@
+body {
+  margin: auto;
+  min-width: 100%;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-color: #fff;
+  font-family: 'Fondamento', cursive;
+  height: auto;
+  max-height: 400px;
+  max-width: 400px;
+  position: fixed;
+  text-align: center;
+  width: auto;
+}
+
+.banner {
+  text-align: center;
+  font-size: 10vw;
+  color: #fff;
+  margin-top: 20px;
+}
