@@ -5,9 +5,9 @@ const app = require('../app.js')
 const signInSuccess = (data) => {
   app.user = data.user
   $('#authenticate').hide()
-  $('#checkout').show()
   $('#newpassword').hide()
   $('#login').hide()
+  $('#checkout').show()
   $('#logedin').show()
   $('#passwordChange').show()
 }
@@ -16,10 +16,12 @@ const signOutSuccess = () => {
   app.user = null
   $('#newpassword').hide()
   $('#checkout').hide()
-  $('#authenticate').show()
   $('#passwordChange').hide()
   $('#newuser2').hide()
+  $('#logedin').hide()
+  $('#authenticate').show()
   $('#newuser').show()
+  $('#login').show()
 }
 
 const changePasswordSuccess = () => {
@@ -29,9 +31,9 @@ const changePasswordSuccess = () => {
 const signUpSuccess = (data) => {
   $('#newusererrorp').hide()
   $('#newuser').hide()
-  $('#newuser2').show()
   $('#newpassword').hide()
   $('#passwordChange').hide()
+  $('#newuser2').show()
 }
 
 const signUpFailure = (error) => {
@@ -42,8 +44,8 @@ const signUpFailure = (error) => {
 
 const signInFailure = (error) => {
   console.error(error)
-  $('#loginerrorp').show()
   $('#passwordChange').hide()
+  $('#loginerrorp').show()
 }
 
 const success = (data) => {
