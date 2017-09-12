@@ -9,7 +9,7 @@ const signInSuccess = (data) => {
   $('#newpassword').hide()
   $('#login').hide()
   $('#logedin').show()
-  $('.passwordChange').show()
+  $('#passwordChange').show()
 }
 
 const signOutSuccess = () => {
@@ -17,7 +17,9 @@ const signOutSuccess = () => {
   $('#newpassword').hide()
   $('#checkout').hide()
   $('#authenticate').show()
-  $('.passwordChange').hide()
+  $('#passwordChange').hide()
+  $('#newuser2').hide()
+  $('#newuser').show()
 }
 
 const changePasswordSuccess = () => {
@@ -29,19 +31,19 @@ const signUpSuccess = (data) => {
   $('#newuser').hide()
   $('#newuser2').show()
   $('#newpassword').hide()
-  $('.passwordChange').hide()
+  $('#passwordChange').hide()
 }
 
 const signUpFailure = (error) => {
   console.error(error)
   $('#newpassword').hide()
-  $('.passwordChange').hide()
+  $('#passwordChange').hide()
 }
 
 const signInFailure = (error) => {
   console.error(error)
   $('#loginerrorp').show()
-  $('.passwordChange').hide()
+  $('#passwordChange').hide()
 }
 
 const success = (data) => {
