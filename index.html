@@ -25,11 +25,11 @@
 <body class="container-fluid">
   <br><br><br>
   <h1 class="banner">Fantasy Sports Leagues</h1>
-<p>4</p>
+<p>5</p>
   <div class="fixed-bottom" id="newpassword">
     <form id="change-password">
       <div class="form-group">
-        <h4>Change Password:</h4><label for="">Old Password</label><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control"><label for="">New Password</label><input type="password" name="passwords[new]" placeholder="New Password" class="form-control">
+        <h4>Change Password:</h4><label for="">Old Password</label><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-3 box"><label for="">New Password</label><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-3 box">
         <button
           type="submit" class="btn btn-primary" name="submit">Change Password</button>
       </div>
@@ -54,16 +54,14 @@
             <form id="sign-in">
               <div class="form-group" id="login">
                 <h4>Login</h4>
-                <input type="text" class="form-control" name="credentials[email]" value="" placeholder="Email">
-                <input type="password" class="form-control" name="credentials[password]" value="" placeholder="Password">
+                <input type="text" class="form-control col-xs-3 box" name="credentials[email]" value="" placeholder="Email">
+                <input type="password" class="form-control col-xs-3 box" name="credentials[password]" value="" placeholder="Password">
                 <button type="submit" class="btn btn-primary">Login</button>
               </div>
             </form>
             <div id="logedin">
             <h4>
-              You have successfully signed up!
-              <br>
-              <button class="btn btn-primary close" data-dismiss="modal" type="button">Click me to go to your homepage</button>
+              You have successfully signed up!<button class="btn btn-primary close" data-dismiss="modal" type="button">Homepage</button>
             </h4>
             </div>
             <div id="loginerrorp">
@@ -81,10 +79,10 @@
                 <h4>Sign Up</h4>
                 <h6>Once you have signed up, you will need to login by clicking on the Sign-in tab.</h6>
                 <label for="">Username</label>
-                <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control"><br>
+                <input type="text" name="credentials[email]" value="" placeholder="Email" class="form-control col-xs-3 box"><br>
                 <label for="">Password</label>
-                <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control">
-                <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control"><br>
+                <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control col-xs-3 box">
+                <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control col-xs-3 box"><br>
                 <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
               </div>
             </form>

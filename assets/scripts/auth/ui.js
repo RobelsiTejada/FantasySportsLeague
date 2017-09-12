@@ -24,6 +24,7 @@ const changePasswordSuccess = () => {
 const signUpSuccess = (data) => {
   $('#newuser').hide()
   $('#newuser2').show()
+  $('#newusererrorp').hide()
 }
 
 const signUpFailure = (error) => {
