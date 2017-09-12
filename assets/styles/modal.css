@@ -32,12 +32,16 @@
 }
 
 .checkoutbtn {
-  margin: 0 auto;
+  position: absolute;
+  top: 1px;
+  left: 1px;
   background-color: #4286f4;
 }
 
 .changepass {
-  margin: 0 auto;
+  position: absolute;
+  top: 1px;
+  right: 1px;
   background-color: #4286f4;
 }
 
