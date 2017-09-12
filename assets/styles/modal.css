@@ -1,6 +1,6 @@
 .position-modal {
   position: absolute;
-  border: 3px solid #ffffff;
+  border: 3px solid #fff;
   padding: 10px;
   background-color: #ff0000;
   color: #000;
@@ -18,22 +18,20 @@
 
 .modal-content {
   position: fixed;
-  max-width: 90%;
-  max-height: 75%;
-  opacity: .7;
+  max-width: 90vw;
+  max-height: 85vw;
+  opacity: .6;
   background-color: #fff;
 }
 
 .checkoutbtn {
   color: #fff;
   float: right;
-  font-size: 24px;
   font-weight: bold;
 }
 
 .changepass {
   color: #fff;
   float: left;
-  font-size: 24px;
   font-weight: bold;
 }
