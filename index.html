@@ -25,13 +25,13 @@
 <body class="container-fluid">
   <h1 class="banner">Fantasy Sports Leagues</h1>
 
-  <p>16</p>
+  <p>17</p>
 
   <div id="newpassword">
     <form id="change-password">
       <div class="form-group">
         <h4>Change Password:</h4><div><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-1 box"><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-1 box">
-        <button type="submit" class="btn btn-primary" name="submit">Update</button></div>
+        <button type="submit" class="btn-floating btn-lg blue-gradient" name="submit">Update</button></div>
       </div>
     </form>
   </div>
@@ -56,13 +56,13 @@
                 <h4>Login</h4>
                 <input type="text" class="form-control col-xs-1 box" name="credentials[email]" value="" placeholder="Email">
                 <input type="password" class="form-control col-xs-1 box" name="credentials[password]" value="" placeholder="Password">
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn-floating btn-lg blue-gradient">Login</button>
               </div>
             </form>
             <div id="logedin">
               <h4>
               You have successfully signed up!<br>
-              <button class="btn btn-primary" data-dismiss="modal" type="button">Homepage</button>
+              <button class="btn-floating btn-lg blue-gradient" data-dismiss="modal" type="button">Homepage</button>
             </h4>
             </div>
             <div id="loginerrorp">
@@ -84,7 +84,7 @@
                 <label for="">Password</label>
                 <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control col-xs-1 box">
                 <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control col-xs-1 box"><br>
-                <button type="submit" class="btn btn-primary" name="button">Sign Up</button>
+                <button type="submit" class="btn-floating btn-lg blue-gradient" name="button">Sign Up</button>
               </div>
             </form>
             <div id="newuser2">
@@ -112,18 +112,18 @@
 
   </div>
 
-  <nav class="navbar navbar-default navbar-fixed-top modalbar">
+  <nav class="navbar navbar-default navbar-absolute-top modalbar">
     <div class="container">
       <div>
         <form id="sign-out">
-          <button class="btn btn-primary checkoutbtn" id="checkout">Sign Out</button>
+          <button class="btn-floating btn-lg blue-gradient checkoutbtn" id="checkout">Sign Out</button>
         </form>
       </div>
       <div>
-        <button class="btn btn-primary" data-target="#access" data-toggle="modal" type="button" id="authenticate">SignIn/SignUp</button>
+        <button class="btn-floating btn-lg blue-gradient" data-target="#access" data-toggle="modal" type="button" id="authenticate">SignIn/SignUp</button>
       </div>
       <div>
-      <button class="btn btn-primary passwordChange changepass" id="passwordChange" name="submit">Change Password</button>
+      <button class="btn-floating btn-lg blue-gradient changepass" id="passwordChange" name="submit">Change Password</button>
     </div>
     </div>
   </nav>
