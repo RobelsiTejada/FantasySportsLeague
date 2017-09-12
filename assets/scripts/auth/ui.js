@@ -23,7 +23,17 @@ const changePasswordSuccess = () => {
 const signUpSuccess = (data) => {
   $('#checkout').show()
   $('#newuser').hide()
-  $('.newuser2').show()
+  $('#newuser2').show()
+}
+
+const signUpFailure = (error) => {
+  console.error(error)
+  $('#newusererrorp').show()
+}
+
+const signInFailure = (error) => {
+  console.error(error)
+  $('#loginerrorp').show()
 }
 
 const success = (data) => {
@@ -31,12 +41,13 @@ const success = (data) => {
 
 const failure = (error) => {
   console.error(error)
-  $('.newusererrorp').show()
 }
 
 module.exports = {
   failure,
   success,
+  signUpFailure,
+  signInFailure,
   signInSuccess,
   signOutSuccess,
   changePasswordSuccess,
