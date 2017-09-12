@@ -32,15 +32,16 @@
 }
 
 .checkoutbtn {
-  float: right;
+  margin: 0 auto;
   background-color: #4286f4;
 }
 
 .changepass {
-  float: left;
+  margin: 0 auto;
   background-color: #4286f4;
 }
 
 .signupsignin {
+  margin: 0 auto;
   background-color: #4286f4;
 }
