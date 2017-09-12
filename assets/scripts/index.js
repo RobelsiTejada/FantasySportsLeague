@@ -17,6 +17,9 @@ const authEvents = require('./auth/events.js')
 
 // On document ready
 $(() => {
+  $('.passwordChange').click(function () {
+    $('#newpassword').toggle()
+  })
   $('#checkout').hide()
   $('#newpassword').hide()
   $('#newusererrorp').hide()
@@ -24,8 +27,6 @@ $(() => {
   $('#loginerrorp').hide()
   $('#logedin').hide()
   $('#newpassword').hide()
-  $('.passwordChange').click(function () {
-    $('#newpassword').toggle()
-  })
+  $('.passwordChange').hide()
   authEvents.addHandlers()
 })
