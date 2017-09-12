@@ -7,6 +7,7 @@ const signInSuccess = (data) => {
   $('#authenticate').hide()
   $('#checkout').show()
   $('newpassword').show()
+  $('.modal').hide()
 }
 
 const signOutSuccess = () => {
