@@ -23,5 +23,9 @@ $(() => {
   $('#newuser2').hide()
   $('#loginerrorp').hide()
   $('#logedin').hide()
+  $('#newpassword').hide()
+  $('.passwordChange').click(function () {
+    $('#newpassword').toggle()
+  })
   authEvents.addHandlers()
 })

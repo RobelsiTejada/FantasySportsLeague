@@ -19,6 +19,7 @@ const signOutSuccess = () => {
 }
 
 const changePasswordSuccess = () => {
+  $('#newpassword').hide()
 }
 
 const signUpSuccess = (data) => {

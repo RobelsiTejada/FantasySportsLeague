@@ -25,13 +25,15 @@
 <body class="container-fluid">
   <br><br><br>
   <h1 class="banner">Fantasy Sports Leagues</h1>
-<p>6</p>
-  <div class="fixed-bottom" id="newpassword">
+
+  <p>7</p>
+
+  <button class="btn btn-primary passwordChange" name="submit">Change Password</button>
+  <div id="newpassword">
     <form id="change-password">
       <div class="form-group">
-        <h4>Change Password:</h4><label for="">Old Password<input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-3 box"></label><label for="">New Password</label><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-3 box">
-        <button
-          type="submit" class="btn btn-primary" name="submit">Change Password</button>
+        <h4>Change Password:</h4><label for="">Old Password<input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-3 box"></label><label for="">New Password<input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-3 box"></label>
+        <button type="submit" class="btn btn-primary" name="submit">Change Password</button>
       </div>
     </form>
   </div>
@@ -60,12 +62,12 @@
               </div>
             </form>
             <div id="logedin">
-            <h4>
+              <h4>
               You have successfully signed up!<button class="btn btn-primary close" data-dismiss="modal" type="button">Homepage</button>
             </h4>
             </div>
             <div id="loginerrorp">
-            <h4>
+              <h4>
               The passwords you entered is not correct!
               <br>
               Please make sure your password is correct and try again.
@@ -93,7 +95,7 @@
               </h4>
             </div>
             <div id="newusererrorp">
-            <h4>
+              <h4>
               The passwords enter do not match!
               <br>
               Please make sure your passwords match and try again.
