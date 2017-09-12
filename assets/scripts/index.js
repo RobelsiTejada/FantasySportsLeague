@@ -28,5 +28,8 @@ $(() => {
   $('#logedin').hide()
   $('#newpassword').hide()
   $('.passwordChange').hide()
+  $('#authenticate').show()
+  $('#newuser').show()
+  $('#login').show()
   authEvents.addHandlers()
 })
