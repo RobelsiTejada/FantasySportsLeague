@@ -31,7 +31,7 @@
     <form id="change-password">
       <div class="form-group">
         <h4>Change Password:</h4><div><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-1 box"><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-1 box">
-        <button type="submit" class="btn blue-gradient btn-rounded" name="submit">Update</button></div>
+        <button type="submit" class="btn btn-primary btn-lg" name="submit">Update</button></div>
       </div>
     </form>
   </div>
@@ -41,6 +41,7 @@
       <div class="modal-content">
 
         <div class="modal-header">
+          <h4>Fantasy Sports Leagues</h4>
         </div>
 
         <ul class="nav nav-tabs" id="tabContent">
@@ -56,13 +57,13 @@
                 <h4>Login</h4>
                 <input type="text" class="form-control col-xs-1 box" name="credentials[email]" value="" placeholder="Email">
                 <input type="password" class="form-control col-xs-1 box" name="credentials[password]" value="" placeholder="Password">
-                <button type="submit" class="btn blue-gradient btn-rounded">Login</button>
+                <button type="submit" class="btn btn-primary btn-lg">Login</button>
               </div>
             </form>
             <div id="logedin">
               <h4>
               You have successfully signed up!<br>
-              <button class="btn blue-gradient btn-rounded" data-dismiss="modal" type="button">Homepage</button>
+              <button class="btn btn-primary btn-lg" data-dismiss="modal" type="button">Homepage</button>
             </h4>
             </div>
             <div id="loginerrorp">
@@ -84,7 +85,7 @@
                 <label for="">Password</label>
                 <input type="password" name="credentials[password]" value="" placeholder="Password" class="form-control col-xs-1 box">
                 <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password" class="form-control col-xs-1 box"><br>
-                <button type="submit" class="btn blue-gradient btn-rounded signingup" name="button">Sign Up</button>
+                <button type="submit" class="btn btn-primary btn-lg signingup" name="button">Sign Up</button>
               </div>
             </form>
             <div id="newuser2">
@@ -114,16 +115,16 @@
 
   <nav class="navbar navbar-default navbar-fixed-top modalbar">
     <div class="container">
-      <div class="col-xs-4 box">
+      <div class="col-xs-3 box">
         <form id="sign-out">
-          <button class="btn blue-gradient btn-rounded checkoutbtn" id="checkout">Sign Out</button>
+          <button class="btn btn-primary btn-lg checkoutbtn" id="checkout">Sign Out</button>
         </form>
       </div>
-      <div class="col-xs-4 box">
-        <button class="btn blue-gradient btn-rounded" data-target="#access" data-toggle="modal" type="button" id="authenticate">SignIn/SignUp</button>
+      <div class="col-xs-6 box">
+        <button class="btn btn-primary btn-lg" data-target="#access" data-toggle="modal" type="button" id="authenticate">SignIn/SignUp</button>
       </div>
-      <div class="col-xs-4 box">
-      <button class="btn blue-gradient btn-rounded changepass" id="passwordChange" name="submit">Change Password</button>
+      <div class="col-xs-3 box">
+      <button class="btn btn-primary btn-lg changepass" id="passwordChange" name="submit">Change Password</button>
     </div>
     </div>
   </nav>

@@ -27,7 +27,7 @@ $(() => {
   $('#loginerrorp').hide()
   $('#logedin').hide()
   $('#newpassword').hide()
-  $('.passwordChange').hide()
+  $('.changepass').hide()
   $('#authenticate').show()
   $('#newuser').show()
   $('#login').show()

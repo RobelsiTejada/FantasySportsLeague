@@ -1,4 +1,5 @@
 .position-modal {
+  margin: 0 auto;
   position: absolute;
   border: 3px solid #fff;
   padding: 10px;
@@ -9,32 +10,31 @@
 .location {
   position: absolute;
   margin: 0 auto;
-  max-width: 60vw;
-  max-height: 80vw;
+  max-width: 30%;
+  max-height: 45%;
   color: #000;
   background-color: #ff0000;
   background-size: cover;
 }
 
 .modal-content {
+  margin: 0 auto;
   position: fixed;
-  max-width: 90vw;
-  max-height: 85vw;
+  max-width: 40%;
+  max-height: 65%;
   opacity: .6;
   background-color: #fff;
 }
 
+.tab-content {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .checkoutbtn {
-  color: #fff;
   float: right;
 }
 
 .changepass {
-  color: #fff;
-  float: left;
-}
-
-.signingup {
-  color: #fff;
   float: left;
 }

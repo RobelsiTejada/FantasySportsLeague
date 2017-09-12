@@ -14,6 +14,7 @@ body {
 
 .banner {
   text-align: center;
-  font-size: 10vw;
+  font-size: 36px;
   color: #000;
+  margin-top: 72px;
 }
