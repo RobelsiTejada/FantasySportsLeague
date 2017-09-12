@@ -33,8 +33,14 @@
 
 .checkoutbtn {
   float: right;
+  background-color: #ff0000;
 }
 
 .changepass {
   float: left;
+  background-color: #ff0000;
+}
+
+.signupsignin {
+  background-color: #ff0000;
 }
