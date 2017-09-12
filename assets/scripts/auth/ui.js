@@ -28,7 +28,6 @@ const signUpSuccess = (data) => {
 
 const signUpFailure = (error) => {
   console.error(error)
-  $('#newusererrorp').show()
 }
 
 const signInFailure = (error) => {
