@@ -1,6 +1,6 @@
 .position-modal {
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
   border: 3px solid #fff;
   padding: 10px;
   background-color: #ff0000;
@@ -8,10 +8,10 @@
 }
 
 .location {
-  position: fixed;
+  position: absolute;
   margin: 0 auto;
-  max-width: 8vw;
-  max-height: 10vw;
+  max-width: 30%;
+  max-height: 45%;
   color: #000;
   background-color: #ff0000;
   background-size: cover;
@@ -20,8 +20,8 @@
 .modal-content {
   margin: 0 auto;
   position: fixed;
-  max-width: 65%;
-  max-height: 75%;
+  max-width: 40%;
+  max-height: 65%;
   opacity: .6;
   background-color: #fff;
 }

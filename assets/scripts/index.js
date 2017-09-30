@@ -12,6 +12,7 @@ $(() => {
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
+
 const authEvents = require('./auth/events.js')
 
 // On document ready
@@ -30,8 +31,5 @@ $(() => {
   $('#authenticate').show()
   $('#newuser').show()
   $('#login').show()
-  $('.carousel').carousel({
-    interval: 2000
-  })
   authEvents.addHandlers()
 })

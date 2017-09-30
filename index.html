@@ -23,7 +23,20 @@
 </head>
 
 <body class="container-fluid">
-  <div class="modal fade modal-content" id="access">
+  <h1 class="banner">Fantasy Sports Leagues</h1>
+
+<p>placeholder 1</p>
+
+  <div id="newpassword">
+    <form id="change-password">
+      <div class="form-group">
+        <h4>Change Password:</h4><div><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-1 box"><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-1 box">
+        <button type="submit" class="btn btn-outline-primary btn-lg" name="submit">Update</button></div>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal fade location modal-content" id="access">
     <div class="modal-dialog">
       <div class="modal-content">
 
@@ -97,72 +110,7 @@
 
       </div>
     </div>
-  </div>
 
-  <h1 class="banner">Fantasy Sports Leagues</h1>
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    </ol>
-
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="img/1.jpg" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>NFL</h3>
-          <p>Pick your favorite players</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="img/2.jpg" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>NBA</h3>
-          <p>Pick your favortie teams</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="img/3.jpg" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>MLB</h3>
-          <p>Build your custom leagues</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="img/4.jpg" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>NHL</h3>
-          <p>Play with friends</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="img/5.jpg" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>MLS</h3>
-          <p>Join a league</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="newpassword">
-    <form id="change-password">
-      <div class="form-group">
-        <h4>Change Password:</h4>
-        <div><input type="password" name="passwords[old]" placeholder="Old Password" class="form-control col-xs-1 box"><input type="password" name="passwords[new]" placeholder="New Password" class="form-control col-xs-1 box">
-          <button type="submit" class="btn btn-outline-primary btn-lg" name="submit">Update</button></div>
-      </div>
-    </form>
   </div>
 
   <nav class="navbar navbar-default navbar-fixed-top modalbar">
@@ -176,8 +124,8 @@
         <button class="btn btn-outline-primary btn-lg signupsignin" data-target="#access" data-toggle="modal" type="button" id="authenticate">SignIn/SignUp</button>
       </div>
       <div class="col-xs-3 box">
-        <button class="btn btn-outline-primary btn-lg changepass" id="passwordChange" name="submit">Change Password</button>
-      </div>
+      <button class="btn btn-outline-primary btn-lg changepass" id="passwordChange" name="submit">Change Password</button>
+    </div>
     </div>
   </nav>
 </body>

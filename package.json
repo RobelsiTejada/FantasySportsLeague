@@ -7,7 +7,6 @@
     "content": "CC­BY­NC­SA 4.0"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
   },
   "devDependencies": {
@@ -39,7 +38,7 @@
     "html-loader": "*",
     "load-grunt-config": "*",
     "node-libs-browser": "*",
-    "node-sass": "^4.5.3",
+    "node-sass": "*",
     "sass-loader": "*",
     "style-loader": "*",
     "time-grunt": "*",
